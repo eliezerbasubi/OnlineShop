@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/new_article_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new article name"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/new_article_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="new article price"
+            android:textColorHint="@color/colorBlack"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/new_article_name"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/cancel_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_below="@id/new_article_price"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/official_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:layout_below="@id/new_article_price"
+            android:layout_toRightOf="@id/cancel_update"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        style="?android:attr/progressBarStyle"
+        android:progress="25"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

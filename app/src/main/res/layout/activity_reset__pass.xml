@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reset_Pass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:id="@+id/linear">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Password"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/endblue"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your email address in the field below"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"/>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_email"
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:id="@+id/emailReset"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="SEND"
+        android:background="@drawable/background"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/user_email"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>

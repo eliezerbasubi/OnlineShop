@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeChat"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eliezer.onlineshop.SignUpChatActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Enter your name"
+        android:padding="20dp"
+        android:id="@+id/signName"
+        android:singleLine="true"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/signEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signName"
+        android:layout_alignStart="@+id/signName"
+        android:layout_below="@+id/signName"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your email"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/signPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signEmail"
+        android:layout_alignStart="@+id/signEmail"
+        android:layout_below="@+id/signEmail"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter your password"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/signChatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/signPassword"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Signup"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/signInChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/signChatButton"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorMaroon"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

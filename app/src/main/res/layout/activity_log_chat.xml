@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogChat">
+
+    <EditText
+        android:id="@+id/chat_email"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="27dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/chat_password"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="151dp" />
+
+    <Button
+        android:id="@+id/chat_sigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

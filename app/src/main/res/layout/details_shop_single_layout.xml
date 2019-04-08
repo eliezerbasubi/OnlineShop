@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="6dp"
+        card_view:cardCornerRadius="@dimen/cardview_default_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/prod_image_single"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/lo"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/prod_name_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prod_image_single"
+                android:drawableLeft="@drawable/ic_label_black_24dp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="HNK Design"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/prod_price_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prod_name_single"
+                android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                android:drawablePadding="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="200"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/myRatingBarSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:rating="3.5"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:isIndicator="false"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/prod_price_single"
+                android:progressTint="@color/colorYellow"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

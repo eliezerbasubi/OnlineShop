@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:id="@+id/linear">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/endblue"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select an option for making the payment of your shop"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="PayPal"
+        android:background="@drawable/background"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/linear"
+        android:textAllCaps="false"
+        android:onClick="pay"
+        />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="Contact Administrator"
+        android:background="@drawable/background"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/paypal"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>

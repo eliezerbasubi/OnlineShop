@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/payment_content"
+        android:text="Click this button below to pay"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/paypal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/payment_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

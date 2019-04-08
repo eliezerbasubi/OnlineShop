@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ro"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Kuirmaa"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/endblue"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="select an option to descover more about the application"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/create_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:text="Create Shop"
+            android:textColor="@color/endblue"
+            android:background="@drawable/yaya"
+            android:textSize="20sp"
+            />
+
+
+        <Button
+            android:id="@+id/see_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See Shops"
+            android:background="@drawable/yaya"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textColor="@color/endblue"
+            android:textSize="20sp"
+            android:layout_below="@+id/create_shop"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

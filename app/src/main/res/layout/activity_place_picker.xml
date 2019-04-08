@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eliezer.onlineshop.PlacePickerActivity">
+
+    <Button
+        android:id="@+id/button_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick place"
+        android:layout_centerHorizontal="true"
+        android:onClick="goPlacePicker"/>
+
+    <TextView
+        android:id="@+id/show_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_picker"/>
+
+    <TextView
+        android:id="@+id/longitude_shower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_place"/>
+
+</RelativeLayout>

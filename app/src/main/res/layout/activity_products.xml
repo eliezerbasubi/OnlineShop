@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eliezer.onlineshop.ProductsActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_of_articles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/list_of_articles">
+
+
+    <LinearLayout
+        android:id="@+id/article_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/list_of_articles">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Shop"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_content"
+            android:text="@string/lorem"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:layout_gravity="center_vertical"
+            android:padding="14dp"
+            android:lineSpacingMultiplier="1.5"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/email_address_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eliezer.basubi30@gmail.com"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:id="@+id/phone_number_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="070 584 5851"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:typeface="serif"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+       <ImageView
+            android:id="@+id/see_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:src="@drawable/map_image"
+            android:scaleType="centerCrop"/>
+
+       <!-- <include layout="@layout/activity_maps"
+            android:id="@+id/map_layout"
+            android:layout_height="300dp"
+            android:layout_width="match_parent" />-->
+
+
+
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
